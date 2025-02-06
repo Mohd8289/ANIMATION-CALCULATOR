@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANIMATION CALCULATOR</title>
+
+  <style>
+    #cal{
+      animation-name: aniamtion_calculator;
+      animation-duration: 30s;
+      animation-timing-function: ease-in-out;
+      animation-delay: 1s;
+
+      animation-iteration-count: infinite;
+      animation-direction: alternate; 
+
+
+      /*  display: block;
+      margin: auto; */
+
+
+      margin-left: 40%;
+      margin-right: 30%;
+
+
+      border: 6px double black;
+      border-radius: 3px;
+      width: 250px;
+      background-color: lightgrey;
+      height: auto;
+
+
+
+    }
+
+    #display {
+      margin: 10px;
+      width: 90%;
+      font-size: 30px;
+    }
+
+    .button_container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 10px;
+
+
+      animation-name: button_animation;
+      animation-duration: 2s;
+      animation-timing-function: ease-in-out;
+      animation-delay: 1s;  
+
+    }
+
+    .button {
+      margin: 10px;
+      height: 45px;
+      width: 45px;
+
+
+
+      animation-name: button_animation;
+      animation-duration: 2s;
+      animation-timing-function: ease-in-out;
+      animation-delay: 1s;
+    }
+
+    #cal b {
+
+      font-size: 15px;
+      font-weight: bold;
+
+    }
+
+    #HEADING {
+
+text-align: center;
+border: 6px double red;
+margin-left: 31%;
+margin-right: 30%;
+margin-top: 0%;
+
+
+animation-name: aniamtion_calculator;
+animation-duration: 2s;
+animation-timing-function: ease-in-out;
+animation-delay: 1s;
+
+
+animation-iteration-count: infinite;
+animation-direction: alternate;
+
+}
+
+    @keyframes aniamtion_calculator {
+
+      from{
+        left: 10%;
+        margin: 10px;
+        padding: 2px;
+        background-color: lightblue;
+
+      }
+
+      to{
+         right: auto; 
+         left: 90%; 
+        background-color: aqua;
+
+      }
+    }
+
+
+    @keyframes button_animation {
+      
+
+      from{height: 141px;
+        width:141px;
+      background-color: lightyellow;}
+    }
+
+    to{height: 270px;
+      width: 270px;
+      background-color: blue;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <h1 id="HEADING">ANIMATION CALCULATOR</h1>
+
+  <div id="cal">
+
+    <b> ANIMATION CALCULATOR </b>
+
+
+
+    <input type="text" id="display" readonly>
+
+
+    <div class="button_container">
+
+      <button class="button" onclick="curr= ''
+      document.querySelector('#display').value=curr;
+      ">C</button>
+
+      <button class="button" onclick="curr= curr+'1'
+      document.querySelector('#display').value=curr;
+      ">1</button>
+
+      <button class="button" onclick="curr= curr+'2'
+      document.querySelector('#display').value=curr;
+      ">2</button>
+
+      <button class="button" onclick="curr= curr+'+'
+      document.querySelector('#display').value=curr;
+      ">+</button>
+
+      <button class="button" onclick="curr= curr+'3'
+      document.querySelector('#display').value=curr;
+      ">3</button>
+
+      <button class="button" onclick="curr= curr+'4'
+      document.querySelector('#display').value=curr;
+      ">4</button>
+
+
+
+      <button class="button" onclick="curr= curr+'-'
+      document.querySelector('#display').value=curr;
+      ">-</button>
+
+      <button class="button" onclick="curr= curr+'5'
+      document.querySelector('#display').value=curr;
+      ">5</button>
+
+      <button class="button" onclick="curr= curr+'6'
+      document.querySelector('#display').value=curr;
+      ">6</button>
+
+
+      <button class="button" onclick="curr= curr+'*'
+      document.querySelector('#display').value=curr;
+      ">*</button>
+
+
+      <button class="button" onclick="curr= curr+'7'
+      document.querySelector('#display').value=curr;
+      ">7</button>
+
+      <button class="button" onclick="curr= curr+'8'
+      document.querySelector('#display').value=curr;
+      ">8</button>
+
+
+      <button class="button" onclick="curr= curr+'/'
+      document.querySelector('#display').value=curr;
+      ">/</button>
+
+      <button class="button" onclick="curr= curr+'9'
+      document.querySelector('#display').value=curr;
+      ">9</button>
+
+
+
+      <button class="button" onclick="curr= curr+'0'
+      document.querySelector('#display').value=curr;
+      ">0</button>
+
+
+
+      <button class="button" onclick="curr=eval((curr));
+      document.querySelector('#display').value=curr;">=</button>
+
+
+
+      <button class="button" onclick="curr= curr+'.'
+      document.querySelector('#display').value=curr;
+      ">.</button>
+
+    </div>
+  </div>
+  </div>
+
+  <script>
+
+    let curr = '';
+
+    document.querySelector('#display').value = curr;
+
+
+
+
+  </script>
+</body>
+
+</html
